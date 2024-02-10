@@ -1,0 +1,91 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Header and Balance */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.balance {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Slot Machine Reels */
+.reels {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.reel {
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+}
+
+/* Spin Button */
+.btn-spin {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-spin:hover {
+    background-color: #218838;
+}
+
+.btn-spin:disabled {
+    background-color: #94D194;
+    cursor: not-allowed;
+}
+
+/* Game Over Message */
+.game-over {
+    text-align: center;
+    font-size: 24px;
+    color: #d9534f;
+}
